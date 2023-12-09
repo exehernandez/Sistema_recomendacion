@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>Recomendaciones para el usuario {{ user_id }}</h1>
+    {% if recommendations %}
+        <ul>
+            {% for recommendation in recommendations %}
+                <li>Anime {{ recommendation[0] }} con estimación {{ "%.2f" % recommendation[1] }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay recomendaciones disponibles.</p>
+    {% endif %}
+    <hr>
+    <p>Fin de la página HTML</p>
+</body>
+</html>
+
+
