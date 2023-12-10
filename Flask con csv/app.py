@@ -4,7 +4,7 @@ import ast
 
 app = Flask(__name__)
 
-# Aquí deberías definir o cargar tus DataFrames recomendaciones y base_de_datos
+# Carga de datos
 base_de_datos = pd.read_csv(r"D:\Exe\OneDrive - alumnos.frm.utn.edu.ar\Cursos\Data Science\TP4\Entrega\base_de_datos.csv")
 recomendaciones = pd.read_csv(r"D:\Exe\OneDrive - alumnos.frm.utn.edu.ar\Cursos\Data Science\TP4\Entrega\recomedaciones.csv")
 mov_df = pd.read_csv(r"D:\Exe\OneDrive - alumnos.frm.utn.edu.ar\Cursos\Data Science\TP4\Entrega\Cold Start\mov_df.csv")
