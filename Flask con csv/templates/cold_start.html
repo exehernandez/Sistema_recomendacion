@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLD START</title>
+</head>
+<body>
+    <h1>El usuario es COLD START. Se recomienda el siguiente contenido:</h1>
+    
+    <h2>Recomendaciones MOV:</h2>
+    {{ mov_df | safe }}
+    
+    <h2>Recomendaciones ONA:</h2>
+    {{ ona_df | safe }}
+    
+    <h2>Recomendaciones OVA:</h2>
+    {{ ova_df | safe }}
+    
+    <h2>Recomendaciones SPECIAL:</h2>
+    {{ special_df | safe }}
+    
+    <h2>Recomendaciones TV:</h2>
+    {{ tv_df | safe }}
+</body>
+</html>

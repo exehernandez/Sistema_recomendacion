@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones para el Usuario {{ user_id }}</title>
+</head>
+<body>
+    <h1>Las 20 recomendaciones para el usuario {{ user_id }} son:</h1>
+    {{ df_resultado | safe }}
+</body>
+</html>
